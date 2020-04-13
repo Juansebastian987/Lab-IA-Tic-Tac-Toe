@@ -18,7 +18,6 @@ def is_game_over(node):
     return False, None
 
 def generate_children(node, chosen_symbol):
-    # Create a function to generate the children states for minimax evaluation
     children = []
     for i in range(len(node)):
         if node[i] == None or node[i]==-1:
