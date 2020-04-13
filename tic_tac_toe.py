@@ -49,8 +49,7 @@ class TicTacToeGame():
     self.board[chosen_cell] = _PLAYER_SYMBOL
 
 
-##MODIFICAR
-  def machine_turn(self): # TODO: Use your minimax alpha beta pruning algorithm here to set the machines turn
+  def machine_turn(self):
        self.board = mini_max_ab(self.board,False,_MACHINE_SYMBOL,-1,-1)[1]
       #self.board = mini_max(self.board,False,_MACHINE_SYMBOL)[1]
 
