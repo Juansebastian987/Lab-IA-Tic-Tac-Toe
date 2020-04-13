@@ -29,7 +29,6 @@ def generate_children(node, chosen_symbol):
 def alternate_symbol(symbol):
     return 'o' if symbol == 'x' else 'x'
 
-# TODO: Modify this minimax in order to turn it into an alpha-beta pruning version with depth cutting
 def mini_max_ab(node, is_maximizing_player_turn, chosen_symbol, alpha, beta):
     game_result = is_game_over(node)
 
